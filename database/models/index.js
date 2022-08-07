@@ -10,10 +10,13 @@ const db={};
 
 let sequelize;
 sequelize = new Sequelize(
-  config.database, 
-  config.username, 
-  config.password, 
-  config
+  config.NAME,
+  config.USER,
+  config.PASSWORD,
+  {
+    host:config.HOST,
+    dialect: config.DIALECT,
+  },
 );
 
 

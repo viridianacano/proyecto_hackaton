@@ -1,9 +1,6 @@
 const {PORT} = require("./config/config");
 const {db} = require("./config/database");
-const express=require("express");
-
-const server=express();
-//const {server} = require("./index");
+const {server} = require("./server/index");
 db.authenticate().then(()=>{
     console.log("Database connected");
     server.listen(PORT, ()=>{
