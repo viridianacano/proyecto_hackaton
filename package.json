@@ -1,7 +1,8 @@
 {
-  "name": "perfiles",
+
+  "name": "proyecto_hackaton",
   "version": "1.0.0",
-  "description": "perfiles de estudiantes y universidades",
+  "description": "Proyecto para conectar estudiantes con universidades que tengan intereses en común",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js"
@@ -10,7 +11,13 @@
     "type": "git",
     "url": "git+https://github.com/viridianacano/proyecto_hackaton.git"
   },
-  "author": "",
+
+  "keywords": [
+    "Estudiantes",
+    "Intercambios",
+    "Universidades"
+  ],
+  "author": "Karina S - Equipo 2",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/viridianacano/proyecto_hackaton/issues"
@@ -19,7 +26,7 @@
   "dependencies": {
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "node": "^18.7.0",
+   "node": "^18.7.0",
     "pg": "^8.7.3",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.21.3",
@@ -27,5 +34,9 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
+
+ 
+    "sequelize-cli": "^6.4.1"
+
   }
 }
